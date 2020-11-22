@@ -1,25 +1,15 @@
-/* Example Challenge
- * Print out "hello world" in the console
- *
- * Steps:
- * 1. Use `console.log` to print out "hello world"
- *
- * Example Output: "hello world"
- */
-
-console.log('hello world')
-
 /* Challenge #1
  * Create a variable and print the value
  *
  * Steps:
- * 1. Create a variable and assign it any value
- * 2. Use `console.log` to print out your variable
- *
- * Example Output: n/a
+ * 1. Create a variable and assign it any value*/
+ /* 2. Use `console.log` to print out your variable
+
+ /* Example Output: n/a
  */
 
-// TODO: ADD CODE HERE
+let words = "Let me fly";
+console.log(words);
 
 /* Challenge #2
  * Create variables for your first and last name then print your full name
@@ -32,7 +22,10 @@ console.log('hello world')
  * Example Output: "Elizabeth Thompson"
  */
 
-// TODO: ADD CODE HERE
+let firstName = "Alton";
+let lastName = "Michaux";
+
+console.log(firstName, lastName);
 
 /* Challenge #3
  * Calculate the total price rounded to two decimals
@@ -46,7 +39,11 @@ console.log('hello world')
  * Example Output: "$49.90"
  */
 
-// TODO: ADD CODE HERE
+const price = "9.98";
+let quantity = "8";
+let total = price * quantity;
+
+console.log(total.toFixed(2));
 
 /* Challenge #4
  * Declare a variable and conditionally assign it a value
@@ -62,7 +59,15 @@ console.log('hello world')
  * Example Output: "Aww! It's not sunny outside"
  */
 
-// TODO: ADD CODE HERE
+const weather = "Rainy";
+let message;
+if (weather === 'Sunny') {
+    message = "Yay! It's sunny outside!"
+} else {
+    message = "Aww! It's not sunny outside."
+}
+
+console.log(message);
 
 /* Challenge #5
  * Create a function that returns any string
@@ -75,7 +80,12 @@ console.log('hello world')
  * Example Output: "I called a function!"
  */
 
-// TODO: ADD CODE HERE
+function myFunction() {
+    randStr = Math.floor(Math.random() * 10);
+    return randStr;
+}
+
+console.log(myFunction());
 
 /* Challenge #6
  * Rewrite the function in Challenge #5 as an arrow function
@@ -88,7 +98,10 @@ console.log('hello world')
  * Example Output: "I called an arrow function!"
  */
 
-// TODO: ADD CODE HERE
+const myArrowFunction = (upper) => { return Math.random(upper).toString(8).substr(2, 4, 6, 8);   
+};
+
+console.log(myArrowFunction(12));
 
 /* Challenge #7
  * Create a function that accepts a string argument and returns it in all uppercase
@@ -102,7 +115,11 @@ console.log('hello world')
  * Example Output: "WHY AM I SCREAMING"
  */
 
-// TODO: ADD CODE HERE
+let stringToUpper = (str) => {
+    return str.toUpperCase();
+}
+
+console.log(stringToUpper("always"));
 
 /* Challenge #8
  * Create a function that accepts a number argument and returns double its value
@@ -119,4 +136,12 @@ console.log('hello world')
  * Example Output: 2, 10, 20
  */
 
-// TODO: ADD CODE HERE
+const multiplyByTwo = (number) => {
+    return number * 2;
+}
+
+const num1 = multiplyByTwo(1);
+const num2 = multiplyByTwo(5);
+const num3 = multiplyByTwo(10);
+
+console.log(num1, num2, num3);
