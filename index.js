@@ -8,8 +8,8 @@
  /* Example Output: n/a
  */
 
-let words = "Let me fly";
-console.log(words);
+let words = "Let me fly"; //declare 'words' variable
+console.log(words); //log 'words' to console
 
 /* Challenge #2
  * Create variables for your first and last name then print your full name
@@ -22,10 +22,10 @@ console.log(words);
  * Example Output: "Elizabeth Thompson"
  */
 
-let firstName = "Alton";
-let lastName = "Michaux";
+let firstName = "Alton"; //assign 'firstName' variable
+let lastName = "Michaux"; //assign 'lastName' variable
 
-console.log(firstName, lastName);
+console.log(firstName, lastName); //log 'firstName' and 'lastName' to console
 
 /* Challenge #3
  * Calculate the total price rounded to two decimals
@@ -39,11 +39,11 @@ console.log(firstName, lastName);
  * Example Output: "$49.90"
  */
 
-const price = "9.98";
-let quantity = "8";
-let total = price * quantity;
+const price = "9.98"; //declare 'price' variable
+let quantity = "8"; //declare 'quantity' variable
+let total = price * quantity; //declare 'total' variable by multiplying 'price' and 'quantity'
 
-console.log(total.toFixed(2));
+console.log(total.toFixed(2)); //log total to console, add '.toFixed()' method for decimals
 
 /* Challenge #4
  * Declare a variable and conditionally assign it a value
@@ -59,15 +59,15 @@ console.log(total.toFixed(2));
  * Example Output: "Aww! It's not sunny outside"
  */
 
-const weather = "Rainy";
-let message;
-if (weather === 'Sunny') {
+const weather = "Sunny"; //declare 'weather' variable
+let message; //declare 'message' variable to a blank value
+if (weather === 'Sunny') { //write a conditional statement determining the programs actions based on 'weather' variable
     message = "Yay! It's sunny outside!"
-} else {
+} else { //condition if false
     message = "Aww! It's not sunny outside."
 }
 
-console.log(message);
+console.log(message); //log 'message' to console
 
 /* Challenge #5
  * Create a function that returns any string
@@ -80,12 +80,12 @@ console.log(message);
  * Example Output: "I called a function!"
  */
 
-function myFunction() {
-    randStr = Math.floor(Math.random() * 10);
-    return randStr;
+function myFunction() { //create function
+    randStr = Math.floor(Math.random() * 10); //declare variable that stores 'Math.random' function times ten and rounded to the lowest integer
+    return randStr; //return the variable 'randStr'
 }
 
-console.log(myFunction());
+console.log(myFunction()); //log 'myFunction()' to console
 
 /* Challenge #6
  * Rewrite the function in Challenge #5 as an arrow function
@@ -98,10 +98,10 @@ console.log(myFunction());
  * Example Output: "I called an arrow function!"
  */
 
-const myArrowFunction = (upper) => { return Math.random(upper).toString(8).substr(2, 4, 6, 8);   
+const myArrowFunction = (upper) => { return Math.random(upper).toString(8).substr(2, 4, 6, 8); //created arrow function with 'upper' argument to determine the max number returned   
 };
 
-console.log(myArrowFunction(12));
+console.log(myArrowFunction(12)); //logged 'myArrowfunction' with the argument of 12
 
 /* Challenge #7
  * Create a function that accepts a string argument and returns it in all uppercase
@@ -115,11 +115,11 @@ console.log(myArrowFunction(12));
  * Example Output: "WHY AM I SCREAMING"
  */
 
-let stringToUpper = (str) => {
-    return str.toUpperCase();
+let stringToUpper = (str) => { //created function 'stringToUpper' that takes the variable 'str' as an argument and capitales the message
+    return str.toUpperCase(); //returns variable 'str' as all uppercase letters using the method '.toUpperCase'
 }
 
-console.log(stringToUpper("always"));
+console.log(stringToUpper("always")); //logged 'stringToUpper' to console using the string 'always'
 
 /* Challenge #8
  * Create a function that accepts a number argument and returns double its value
@@ -136,12 +136,12 @@ console.log(stringToUpper("always"));
  * Example Output: 2, 10, 20
  */
 
-const multiplyByTwo = (number) => {
-    return number * 2;
+const multiplyByTwo = (number) => { //created the 'multiplyByTwo' function with 'number' argument
+    return number * 2; //returns variable 'number' times 2
 }
 
-const num1 = multiplyByTwo(1);
-const num2 = multiplyByTwo(5);
+const num1 = multiplyByTwo(1); 
+const num2 = multiplyByTwo(5); //'num1','num2','num3' all store 'multiplyByTwo' functions with different number arguments
 const num3 = multiplyByTwo(10);
 
-console.log(num1, num2, num3);
+console.log(num1, num2, num3); //logs the results of 'num1', 'num2' and 'num3' to the console
