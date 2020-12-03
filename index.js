@@ -59,7 +59,7 @@ console.log(total.toFixed(2)); //log total to console, add '.toFixed()' method f
  * Example Output: "Aww! It's not sunny outside"
  */
 
-const weather = "Sunny"; //declare 'weather' variable
+const weather = "Rainy"; //declare 'weather' variable
 let message; //declare 'message' variable to a blank value
 if (weather === 'Sunny') { //write a conditional statement determining the programs actions based on 'weather' variable
     message = "Yay! It's sunny outside!"
@@ -81,7 +81,8 @@ console.log(message); //log 'message' to console
  */
 
 function myFunction() { //create function
-    randStr = Math.floor(Math.random() * 10); //declare variable that stores 'Math.random' function times ten and rounded to the lowest integer
+    randStr = "I love coding!"; //declare variable that stores the string
+    console.log(typeof randStr);  //instructed console to display the type of output to make sure it is dispalying a string
     return randStr; //return the variable 'randStr'
 }
 
@@ -98,10 +99,10 @@ console.log(myFunction()); //log 'myFunction()' to console
  * Example Output: "I called an arrow function!"
  */
 
-const myArrowFunction = (upper) => { return Math.random(upper).toString(8).substr(2, 4, 6, 8); //created arrow function with 'upper' argument to determine the max number returned   
+const myArrowFunction = () => { return Math.random().toString(5).substr(2, 3); //created arrow function that generates a random number, converts it to a string starting it at the second position and extends for two additional characters
 };
 
-console.log(myArrowFunction(12)); //logged 'myArrowfunction' with the argument of 12
+console.log(myArrowFunction()); //logged 'myArrowfunction' with the argument of 12
 
 /* Challenge #7
  * Create a function that accepts a string argument and returns it in all uppercase
